@@ -1,14 +1,17 @@
 class d:
     def __init__(self):
         self.data = []
+    
     def push_front(self,element):
         self.element = element
         self.data.insert(0,self.element)
         print('ok')
+    
     def push_back(self,element):
         self.element = element
         self.data.append(self.element)
         print('ok')
+    
     def pop_front(self):
         if len(self.data) == 0:
             print('error')
@@ -52,17 +55,24 @@ while True:
         break
     elif a.split()[0] == 'push_front':
         deque.push_front(a.split()[1])
+    
     elif a.split()[0] == 'push_back':
         deque.push_back(a.split()[1])
+    
     elif a == 'pop_front':
         deque.pop_front()
+    
     elif a == 'pop_back':
         deque.pop_back()
+    
     elif a == 'front':
         deque.front()
+    
     elif a == 'back':
         deque.back()
+    
     elif a == 'size':
         deque.size()
+    
     elif a == 'clear':
         deque.clear()
